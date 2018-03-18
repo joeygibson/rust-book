@@ -6,3 +6,18 @@
 pub mod client;
 
 pub mod network;
+
+#[cfg(test)]
+mod tests {
+    use super::network;
+
+    #[test]
+    fn it_works() {
+        // start at root
+        ::client::connect();
+        // or start up one level
+        super::client::connect();
+
+        network::connect();
+    }
+}
