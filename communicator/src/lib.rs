@@ -3,6 +3,6 @@
 // If a module named foo does have submodules, you should put the declarations
 // for foo in a file named foo/mod.rs.
 
-mod client;
+pub mod client;
 
-mod network;
+pub mod network;
