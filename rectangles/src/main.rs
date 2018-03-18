@@ -43,6 +43,6 @@ fn main() {
         "Area of square is {} square pixels",
         square.area()
     );
-    
+
     println!("Square: {:#?}", square);
 }
