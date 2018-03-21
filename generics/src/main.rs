@@ -1,24 +1,24 @@
-//fn largest<T>(list: &[T]) -> T {
-//    let mut largest = list[0];
-//
-//    for &item in list.iter() {
-//        if item > largest {
-//            largest = item;
-//        }
-//    }
-//
-//    largest
-//}
-//
-//fn main() {
-//    let number_list = vec![34, 50, 25, 100, 65];
-//    let char_list = vec!['y', 'm', 'a', 'q'];
-//
-//    let n_res = largest(&number_list);
-//    let c_res = largest(&char_list);
-//
-//    println!("N: {}, C: {}", n_res, c_res);
-//}
+fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
+    let mut largest = list[0];
+
+    for &item in list.iter() {
+        if item > largest {
+            largest = item;
+        }
+    }
+
+    largest
+}
+
+fn main() {
+    let number_list = vec![34, 50, 25, 100, 65];
+    let char_list = vec!['y', 'm', 'a', 'q'];
+
+    let n_res = largest(&number_list);
+    let c_res = largest(&char_list);
+
+    println!("N: {}, C: {}", n_res, c_res);
+}
 
 //struct Point<T> {
 //    x: T,
@@ -59,11 +59,11 @@ impl<T, U> Point<T, U> {
     }
 }
 
-fn main() {
-    let p1 = Point{x: 5, y: 10.4};
-    let p2 = Point{x: "Hello", y: 'c'};
-
-    let p3 = p1.mixup(p2);
-
-    println!("p3.x: {}, px.y: {}", p3.x, p3.y);
-}
+//fn main() {
+//    let p1 = Point{x: 5, y: 10.4};
+//    let p2 = Point{x: "Hello", y: 'c'};
+//
+//    let p3 = p1.mixup(p2);
+//
+//    println!("p3.x: {}, px.y: {}", p3.x, p3.y);
+//}
