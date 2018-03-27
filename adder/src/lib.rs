@@ -31,6 +31,15 @@ impl Guess {
     }
 }
 
+/// Adds two to the given number.
+///
+/// # Examples
+///
+/// ```
+/// let five = 5;
+///
+/// assert_eq!(7, adder::add_two(five));
+/// ```
 pub fn add_two(n: u32) -> u32 {
     n + 2
 }
