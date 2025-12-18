@@ -1,6 +1,0 @@
-[package]
-name = "privacy"
-version = "0.1.0"
-authors = ["Joey Gibson <joey@joeygibson.com>"]
-
-[dependencies]
